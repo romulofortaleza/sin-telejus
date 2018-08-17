@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Judgeauxes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Organ</th>
+      <th>Last update</th>
+      <th>Judge title</th>
+      <th>Judge description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @judgeauxes.each do |judgeaux| %>
+      <tr>
+        <td><%= judgeaux.code %></td>
+        <td><%= judgeaux.organ %></td>
+        <td><%= judgeaux.last_update %></td>
+        <td><%= judgeaux.judge_title %></td>
+        <td><%= judgeaux.judge_description %></td>
+        <td><%= link_to 'Show', judgeaux %></td>
+        <td><%= link_to 'Edit', edit_judgeaux_path(judgeaux) %></td>
+        <td><%= link_to 'Destroy', judgeaux, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Judgeaux', new_judgeaux_path %>

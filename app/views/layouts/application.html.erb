@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SiN - TELEJUS</title>
+    <%= favicon_link_tag 'logo_tj_favicon.png' %>
+
+    <!-- Main css styles -->
+    <%= stylesheet_link_tag 'application', media: 'all'%>
+
+    <!-- Main javascript files -->
+    <%= javascript_include_tag 'application'%>
+    <%= csrf_meta_tags %>
+
+  </head>
+  <body>
+
+    <!-- Wrapper-->
+    <div id="wrapper">
+
+      <!-- Navigation -->
+      <%= render 'layouts/navigation' %>
+
+      <!-- Page wraper -->
+      <div id="page-wrapper" style="background: linear-gradient(#ffffff,#31797c 10%, #FFFFFF)">
+
+        <!-- Page wrapper -->
+        <%= render 'layouts/topnavbar' %>
+        <% if flash.any? %>
+                <% flash.each do |key, value| %>
+                    <div class="alert alert-<%= key %> alert-success animated fadeInRight">
+                    <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                    <%= value %>
+                    </div>
+                <% end %>
+            <% end %>
+
+        <!-- Main view -->
+        <%= yield %>
+        <%= yield :javascript %>
+
+        <!-- Footer -->
+        <%= render 'layouts/footer' %>
+
+      </div>
+      <!-- End page wrapper-->
+
+    </div>
+    <!-- End wrapper-->
+
+  </body>
+</html>

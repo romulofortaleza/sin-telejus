@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @address_organ.code %>
+</p>
+
+<p>
+  <strong>Organ:</strong>
+  <%= @address_organ.organ %>
+</p>
+
+<p>
+  <strong>Last update:</strong>
+  <%= @address_organ.last_update %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @address_organ.type %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @address_organ.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @address_organ.address %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @address_organ.phone %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @address_organ.email %>
+</p>
+
+<%= link_to 'Edit', edit_address_organ_path(@address_organ) %> |
+<%= link_to 'Back', address_organs_path %>

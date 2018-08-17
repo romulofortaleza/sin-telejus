@@ -1,0 +1,94 @@
+<div class="wrapper wrapper-content animated fadeInRight">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="ibox float-e-margins">
+        <div class="ibox-content-scaffold">
+        <center style="color:#49667d;"><h1> <%= @stick.organ %></h1></center>
+        <div class="hr-line-dashed"></div>
+            <form class="form-horizontal">
+              <div class="form-group"><label style="color:#49667d;" class="col-sm-2 control-label">Código:</label>
+                <div class="col-sm-10">
+                 <p style="color:#565555;" class="form-control">                    
+                   <%= @stick.code %>
+                 </p>
+                </div>
+              </div>               
+                  <div class="form-group"><label style="color:#49667d;" class="col-sm-2 control-label">Horário:</label>
+                    <div class="col-sm-10">
+                     <p style="color:#565555;" class="form-control">
+                         <%= @stick.horary %>
+                     </p>
+                  </div>
+                </div>
+                <div class="form-group"><label style="color:#49667d;" class="col-sm-2 control-label">Última Atualização:</label>
+                  <div class="col-sm-10">
+                    <p style="color:#565555;" class="form-control">
+                      <%= @stick.last_date %>
+                  </p>
+                  </div>
+                </div>
+                <div class="form-group"><label style="color:#49667d;" class="col-sm-2 control-label">Juiz:</label>
+                  <div class="col-sm-10">
+                    <p style="color:#565555;" class="form-control">
+                      <%= @stick.judge %>
+                  </p>
+                  </div>
+                </div>
+                  <div class="form-group"><label style="color:#49667d;" class="col-sm-2 control-label">Defensor Público:</label>
+                  <div class="col-sm-10">
+                    <p style="color:#565555;" class="form-control">
+                    <%= @stick.public_defensor %>
+                  </p>
+                  </div>
+                </div>
+                  <div class="form-group"><label style="color:#49667d;" class="col-sm-2 control-label">Curadoria Especial:</label>
+                  <div class="col-sm-10">
+                    <p style="color:#565555;" class="form-control">
+                    <%= @stick.curation %>
+                  </p>
+                  </div>
+                </div>
+                  <div class="form-group"><label style="color:#49667d;" class="col-sm-2 control-label">Promotor:</label>
+                  <div class="col-sm-10">
+                    <p style="color:#565555;" class="form-control">
+                    <%= @stick.promoter %>
+                  </p>
+                  </div>
+                </div>
+
+                  <div class="form-group"><label style="color:#49667d;" class="col-sm-2 control-label">Endereço:</label>
+                  <div class="col-sm-10">
+                    <p style="color:#565555;" class="form-control">
+                    <%= @stick.address %>
+                  </p>
+                  </div>
+                </div>
+
+                  <div class="form-group"><label style="color:#49667d;" class="col-sm-2 control-label">Telefone(s):</label>
+                  <div class="col-sm-10">
+                    <p style="color:#565555;" class="form-control">
+                    <%= @stick.phones %>
+                  </p>
+                  </div>
+                </div>
+
+                  <div class="form-group"><label style="color:#49667d;" class="col-sm-2 control-label">Circunscrição:</label>
+                  <div class="col-sm-10">
+                    <p style="color:#565555;" class="form-control">
+                    <%= @stick.circumscription %>
+                  </p>
+                  </div>
+                </div>
+                <div class="hr-line-dashed">
+              </div>                    
+              <div class="form-group">
+                  <div class="col-sm-4">
+                    <%= link_to 'Voltar', sticks_path, :class => 'btn btn-primary' %>
+                  </div>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  

@@ -1,0 +1,147 @@
+<div class="wrapper wrapper-content animated fadeInRight">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="ibox float-e-margins">
+        <div class="ibox-content-scaffold">
+        <center style="color:#49667d;"><h1> <%= @township.district %></h1></center>
+        <div class="hr-line-dashed"></div>
+            <form class="form-horizontal">
+              <div class="form-group"><label style="color:#49667d;" class="col-sm-2 control-label">Entrância:</label>
+                <div class="col-sm-10">
+                  <p style="color:#565555;" class="form-control">                    
+                    <%= @township.entrance %>
+                  </p>
+                </div>
+              </div> 
+              <div class="form-group"><label style="color:#49667d;" class="col-sm-2 control-label">Código:</label>
+                <div class="col-sm-10">
+                  <p style="color:#565555;" class="form-control">
+                    <%= @township.code %>
+                  </p>
+                </div>
+              </div>
+               <div class="form-group"><label style="color:#49667d;" class="col-sm-2 control-label">Núcleo Regional:</label>
+                <div class="col-sm-10">
+                  <p style="color:#565555;" class="form-control">
+                    <%= @township.nucleus %>
+                  </p>
+                </div>
+              </div> 
+               <div class="form-group"><label style="color:#49667d;" class="col-sm-2 control-label">Data da última atualização:</label>
+                <div class="col-sm-10">
+                  <p style="color:#565555;" class="form-control">
+                    <%= @township.last_update %>
+                  </p>
+                </div>
+              </div> 
+               <div class="form-group"><label style="color:#49667d;" class="col-sm-2 control-label">Nome do fórum:</label>
+                <div class="col-sm-10">
+                  <p style="color:#565555;" class="form-control">
+                    <%= @township.forum %>
+                  </p>
+                </div>
+              </div> 
+               <div class="form-group"><label style="color:#49667d;" class="col-sm-2 control-label">Endereço:</label>
+                <div class="col-sm-10">
+                  <p style="color:#565555;" class="form-control">
+                    <%= @township.address %>
+                  </p>
+                </div>
+              </div>
+              <div class="form-group"><label style="color:#49667d;" class="col-sm-2 control-label">Telefone(s):</label>
+                <div class="col-sm-10">
+                  <p style="color:#565555;" class="form-control">
+                    <%= @township.phone %>
+                  </p>
+                </div>
+              </div> 
+              <div class="form-group"><label style="color:#49667d;" class="col-sm-2 control-label">Supervisor de secretaria:</label>
+                <div class="col-sm-10">
+                  <p style="color:#565555;" class="form-control">
+                    <%= @township.supervisor %>
+                  </p>
+                </div>
+              </div> 
+              <div class="form-group"><label style="color:#49667d;" class="col-sm-2 control-label">Assistente de secretaria:</label>
+                <div class="col-sm-10">
+                  <p style="color:#565555;" class="form-control">
+                    <%= @township.assistant %>
+                  </p>
+                </div>
+              </div> 
+              <div class="form-group"><label style="color:#49667d;" class="col-sm-2 control-label">Comarcas Vinculadas:</label>
+                <div class="col-sm-10">
+                  <p style="color:#565555;" class="form-control">
+                    <%= @township.relantionship %>
+                  </p>
+                </div>
+              </div> 
+              <div class="form-group"><label style="color:#49667d;" class="col-sm-2 control-label">Distritos Judiciários:</label>
+                <div class="col-sm-10">
+                  <p style="color:#565555;" class="form-control">
+                    <%= @township.judicial_districts %>
+                  </p>
+                </div>
+              </div> 
+              <div class="form-group"><label style="color:#49667d;" class="col-sm-2 control-label">Juiz titular:</label>
+                <div class="col-sm-10">
+                  <p style="color:#565555;" class="form-control">
+                    <%= @township.titular_jugde %>
+                  </p>
+                </div>
+              </div>
+              <div class="form-group"><label style="color:#49667d;" class="col-sm-2 control-label">Juiz respondendo:</label>
+                <div class="col-sm-10">
+                  <p style="color:#565555;" class="form-control">
+                    <%= @township.responsiblej %>
+                  </p>
+                </div>
+              </div> 
+              <div class="form-group"><label style="color:#49667d;" class="col-sm-2 control-label">Promotor titular:</label>
+                <div class="col-sm-10">
+                  <p style="color:#565555;" class="form-control">
+                    <%= @township.promoter_owner %>
+                  </p>
+                </div>
+              </div> 
+              <div class="form-group"><label style="color:#49667d;" class="col-sm-2 control-label">Promotor substituto:</label>
+                <div class="col-sm-10">
+                  <p style="color:#565555;" class="form-control">
+                    <%= @township.promoter_change %>
+                  </p>
+                </div>
+              </div> 
+              <div class="form-group"><label style="color:#49667d;" class="col-sm-2 control-label">Defensor público:</label>
+                <div class="col-sm-10">
+                  <p style="color:#565555;" class="form-control">
+                    <%= @township.public_defender %>
+                  </p>
+                </div>
+              </div>               
+              <div class="form-group"><label style="color:#49667d;" class="col-sm-2 control-label">Turma recursal:</label>
+                <div class="col-sm-10">
+                  <p style="color:#565555;" class="form-control">
+                    <%= @township.team %>
+                  </p>
+                </div>
+              </div>
+              <div class="form-group"><label style="color:#49667d;" class="col-sm-2 control-label">Juízes componentes:</label>
+                <div class="col-sm-10">
+                  <p style="color:#565555;" class="form-control">
+                    <%= @township.componentsj %>
+                  </p>
+                </div>
+              </div>
+              <div class="hr-line-dashed">
+              </div>                    
+              <div class="form-group">
+                  <div class="col-sm-4">
+                      <%= link_to 'Voltar', townships_path, :class => 'btn btn-primary' %>                           
+                  </div>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  

@@ -1,0 +1,2 @@
+class UpperComponent < ApplicationRecord
+end

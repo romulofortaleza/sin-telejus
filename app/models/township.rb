@@ -1,0 +1,2 @@
+class Township < ApplicationRecord
+end

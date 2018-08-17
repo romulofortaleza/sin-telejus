@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code: 1
+  organ: MyString
+  last_update: 2018-08-14
+  type: 
+  name: MyString
+  address: MyString
+  phone: MyString
+  email: MyString
+
+two:
+  code: 1
+  organ: MyString
+  last_update: 2018-08-14
+  type: 
+  name: MyString
+  address: MyString
+  phone: MyString
+  email: MyString

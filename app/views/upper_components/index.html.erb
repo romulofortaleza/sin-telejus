@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Upper Components</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Organ</th>
+      <th>Last update</th>
+      <th>Composition</th>
+      <th>Address</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @upper_components.each do |upper_component| %>
+      <tr>
+        <td><%= upper_component.organ %></td>
+        <td><%= upper_component.last_update %></td>
+        <td><%= upper_component.composition %></td>
+        <td><%= upper_component.address %></td>
+        <td><%= link_to 'Show', upper_component %></td>
+        <td><%= link_to 'Edit', edit_upper_component_path(upper_component) %></td>
+        <td><%= link_to 'Destroy', upper_component, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Upper Component', new_upper_component_path %>

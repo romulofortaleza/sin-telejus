@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @component_court.code %>
+</p>
+
+<p>
+  <strong>Organ:</strong>
+  <%= @component_court.organ %>
+</p>
+
+<p>
+  <strong>Last update:</strong>
+  <%= @component_court.last_update %>
+</p>
+
+<p>
+  <strong>Public defender:</strong>
+  <%= @component_court.public_defender %>
+</p>
+
+<p>
+  <strong>Composition:</strong>
+  <%= @component_court.composition %>
+</p>
+
+<%= link_to 'Edit', edit_component_court_path(@component_court) %> |
+<%= link_to 'Back', component_courts_path %>

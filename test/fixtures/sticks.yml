@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code: 1
+  organ: MyString
+  horary: MyString
+  last_date: 2018-08-09
+  judge: MyString
+  public_defensor: MyString
+  curation: MyString
+  promoter: MyString
+  address: MyString
+  phones: MyString
+  circumscription: MyString
+
+two:
+  code: 1
+  organ: MyString
+  horary: MyString
+  last_date: 2018-08-09
+  judge: MyString
+  public_defensor: MyString
+  curation: MyString
+  promoter: MyString
+  address: MyString
+  phones: MyString
+  circumscription: MyString

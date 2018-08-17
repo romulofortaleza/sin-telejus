@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @registry.code %>
+</p>
+
+<p>
+  <strong>Organ:</strong>
+  <%= @registry.organ %>
+</p>
+
+<p>
+  <strong>County:</strong>
+  <%= @registry.county %>
+</p>
+
+<p>
+  <strong>Last update:</strong>
+  <%= @registry.last_update %>
+</p>
+
+<p>
+  <strong>Holder:</strong>
+  <%= @registry.holder %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @registry.email %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @registry.address %>
+</p>
+
+<%= link_to 'Edit', edit_registry_path(@registry) %> |
+<%= link_to 'Back', registries_path %>

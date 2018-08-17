@@ -1,0 +1,107 @@
+<%= form_with(model: stick, local: true, class: 'form-horizontal') do |form| %>
+  <% if stick.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(stick.errors.count, "error") %> prohibited this stick from being saved:</h2>
+      <ul>
+      <% stick.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Código:</label>
+    <div class="col-sm-10">
+      <%= form.number_field :code, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Orgão:</label>
+    <div class="col-sm-10">
+      <%= form.text_field :organ, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Horário:</label>
+    <div class="col-sm-10">
+      <%= form.text_field :horary, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Última Atualização:</label>
+    <div class="col-sm-10">
+      <%= form.date_select :last_date, class: 'form-control' %>
+    </div>
+  </div>
+  
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Juiz:</label>
+    <div class="col-sm-10">
+      <%= form.text_area :judge, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Defensor Público:</label>
+    <div class="col-sm-10">
+      <%= form.text_field :public_defensor, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Curadoria Especial:</label>
+    <div class="col-sm-10">
+      <%= form.text_field :curation, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Promotor(a):</label>
+    <div class="col-sm-10">
+      <%= form.text_field :promoter, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Endereço:</label>
+    <div class="col-sm-10">
+      <%= form.text_field :address, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Telefone(s):</label>
+    <div class="col-sm-10">
+      <%= form.text_field :phones, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Circunscrição:</label>
+    <div class="col-sm-10">
+      <%= form.text_field :circumscription, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="hr-line-dashed"></div>
+  <div class="form-group">
+    <div class="col-sm-4 col-sm-offset-2" style="margin-left: 90%;">
+
+        <a href="/sticks">
+        <button class= "btn btn-danger" type="button">
+          <i class="fa fa-times">
+          </i>
+          </button>
+        </a>
+        <button class= "btn btn-primary" type="submit">
+          <i class="fa fa-check"></i>
+         </button>
+
+      </div>
+  </div>
+<% end %>

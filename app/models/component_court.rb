@@ -1,0 +1,2 @@
+class ComponentCourt < ApplicationRecord
+end

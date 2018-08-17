@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code: 1
+  organ: MyString
+  last_update: MyString
+  judge_title: MyString
+  judge_description: MyText
+
+two:
+  code: 1
+  organ: MyString
+  last_update: MyString
+  judge_title: MyString
+  judge_description: MyText

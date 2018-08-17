@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  entrance: MyString
+  code: 1
+  nucleus: MyString
+  last_update: 2018-07-31
+  district: MyString
+  forum: MyText
+  address: MyString
+  phone: MyString
+  supervisor: MyString
+  assistant: MyString
+  relantionship: MyText
+  judicial_districts: MyText
+  titular_jugde: MyText
+  responsiblej: MyText
+  promoter_owner: MyText
+  promoter_change: MyText
+  public_defender: MyText
+  team: MyText
+  componentsj: MyText
+
+two:
+  entrance: MyString
+  code: 1
+  nucleus: MyString
+  last_update: 2018-07-31
+  district: MyString
+  forum: MyText
+  address: MyString
+  phone: MyString
+  supervisor: MyString
+  assistant: MyString
+  relantionship: MyText
+  judicial_districts: MyText
+  titular_jugde: MyText
+  responsiblej: MyText
+  promoter_owner: MyText
+  promoter_change: MyText
+  public_defender: MyText
+  team: MyText
+  componentsj: MyText

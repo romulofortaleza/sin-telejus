@@ -1,0 +1,81 @@
+pt-BR:
+  users:
+    create:
+      success: "Usuário criado com sucesso!"
+    destroy:
+      success: "Usuário deletado com sucesso!"
+      failure:
+        supervisor: "Este usuário não pode ser deletado pois é um fiscal."
+    update:
+      success: "Usuário atualizado com sucesso!"
+  duties:
+    create:
+      success: "PDF adicionado com sucesso!"
+    destroy:
+      success: "PDF deletado com sucesso!"
+      failure:
+        department: "Esta unidade está associada há um ou mais departamentos"
+    update:
+      success: "Unidade atualizada com sucesso!"
+  supervisors:
+    create:
+      success: "Fiscal criado com sucesso!"
+    destroy:
+      success: "Fiscal deletado com sucesso!"
+      failure:
+          orders: "Este fiscal está associado há uma ou mais ordens de serviço"
+  service_types:
+    create:
+      success: "Intervenção criada com sucesso!"
+    destroy:
+      success: "Intervenção deletada com sucesso!"
+      failure:
+        orders: "Esta intervenção está associada há um ou mais ordens de serviço"
+    update:
+      success: "Intervenção atualizada com sucesso!"
+  sticks:
+    create:
+      success: "Criado com sucesso!"
+    destroy:
+      success: "Deletado com sucesso!"      
+    update:
+      success: "Atualizado com sucesso!"
+  departments:
+    create:
+      success: "Departamento criado com sucesso!"
+    destroy:
+      success:  "Departamento deletado com sucesso!"
+      failure:
+        orders: "Este departamento está associado há um ou mais ordens de serviço"
+    update:
+      success: "Departamento atualizado com sucesso!"
+  activity_roles:
+    create:
+      success: "Ação adicionada com sucesso!"
+    destroy:
+      success: "Ação deletada com sucesso!"
+      failure: "Não foi possível deletar essa ação"
+  activities:
+    create:
+      success: "Ação criada com sucesso!"
+    update:
+      success: "Ação atualizada com sucesso!"
+    destroy:
+      danger: "Ação deletada com sucesso!"
+      failure:
+        roles: "Esta ação está associada há um ou mais perfil"
+  roles:
+    create:
+      success: "Perfil criado com sucesso!"
+    update:
+      success: "Perfil atualziado com sucesso!"
+    destroy:
+      success: "Perfil deletado com sucesso!"
+      failure:
+        activities: "Este Perfil está associado há uma ou mais ações"
+  activerecord:
+    models:
+      location: "Local do Serviço"
+    attributes:
+      location:
+        description: "Descrição"

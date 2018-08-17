@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Organ:</strong>
+  <%= @upper_component.organ %>
+</p>
+
+<p>
+  <strong>Last update:</strong>
+  <%= @upper_component.last_update %>
+</p>
+
+<p>
+  <strong>Composition:</strong>
+  <%= @upper_component.composition %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @upper_component.address %>
+</p>
+
+<%= link_to 'Edit', edit_upper_component_path(@upper_component) %> |
+<%= link_to 'Back', upper_components_path %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @judgeaux.code %>
+</p>
+
+<p>
+  <strong>Organ:</strong>
+  <%= @judgeaux.organ %>
+</p>
+
+<p>
+  <strong>Last update:</strong>
+  <%= @judgeaux.last_update %>
+</p>
+
+<p>
+  <strong>Judge title:</strong>
+  <%= @judgeaux.judge_title %>
+</p>
+
+<p>
+  <strong>Judge description:</strong>
+  <%= @judgeaux.judge_description %>
+</p>
+
+<%= link_to 'Edit', edit_judgeaux_path(@judgeaux) %> |
+<%= link_to 'Back', judgeauxes_path %>

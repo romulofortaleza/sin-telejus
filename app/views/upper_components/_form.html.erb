@@ -1,0 +1,37 @@
+<%= form_with(model: upper_component, local: true) do |form| %>
+  <% if upper_component.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(upper_component.errors.count, "error") %> prohibited this upper_component from being saved:</h2>
+
+      <ul>
+      <% upper_component.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :organ %>
+    <%= form.text_field :organ %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_update %>
+    <%= form.date_select :last_update %>
+  </div>
+
+  <div class="field">
+    <%= form.label :composition %>
+    <%= form.text_area :composition %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address %>
+    <%= form.text_area :address %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

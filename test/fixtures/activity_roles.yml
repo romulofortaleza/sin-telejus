@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  activity: one
+  role: one
+  granted: false
+
+two:
+  activity: two
+  role: two
+  granted: false

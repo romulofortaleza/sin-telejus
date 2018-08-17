@@ -1,0 +1,44 @@
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" src="assets/stylesheets/base/navigation.scss" />
+
+<nav class="navbar-default navbar-static-side" role="navigation">
+  <div class="sidebar-collapse">
+    <ul class="nav metismenu" id="side-menu">
+      <li class="nav-header">
+        <div class="dropdown profile-element">
+          <span>
+            <%= link_to "/home/index" do %>
+              <img alt="image" class="img-circle" src="<%= image_url 'just-menorrr.png' %>"/>
+            <% end %>
+          </span>
+        </div>
+        <div class="logo-element">
+          <%= "TeleJus" %>
+        </div>
+      </li>
+      <% current_user.role.get_menu_activities.each do |menu| %>
+        <li class="<%= 'active' if is_active_root_menu(menu) %>">
+            <%= link_to menu.action do %>
+              <i class="fa <%= menu.icon %>" style="font-size:18px"></i>
+              <span class="nav-label"><%= menu.description %></span>
+
+              <% if menu.activities.count > 0 %>
+                <span class="fa arrow"></span>
+              <% end %>
+            <% end %>
+            <% if menu.activities.count > 0 %>
+              <ul class="nav nav-second-level collapse">
+                <% menu.children.each do |child| %>
+                  <li class="<%= is_active_action(child.action) %>" style="margin: 0px">
+                    <%= link_to child.action do %>
+                      <span class="nav-label"><%= child.description %></span>
+                    <% end %>
+                  </li>
+                <% end %>
+              </ul>
+            <% end %>
+        </li>
+      <% end %>
+    </ul>
+   </div>
+</nav>

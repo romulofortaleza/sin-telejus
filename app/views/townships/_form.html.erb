@@ -1,0 +1,163 @@
+<%= form_with(model: township, local: true, class: 'form-horizontal') do |form| %>
+  <% if township.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(township.errors.count, "error") %> prohibited this township from being saved:</h2>
+      <ul>
+      <% township.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Entrância</label>
+    <div class="col-sm-10">
+      <%= form.text_field :entrance, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Código</label>
+    <div class="col-sm-10">
+      <%= form.number_field :code, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Núcleo regional</label>
+    <div class="col-sm-10">
+      <%= form.text_field :nucleus, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Data da última atualização</label>
+    <div class="col-sm-10">
+     <%= form.date_select :last_update, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Comarca</label>
+    <div class="col-sm-10">
+      <%= form.text_field :district, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Nome do fórum</label>
+    <div class="col-sm-10">
+      <%= form.text_area :forum, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Endereço</label>
+    <div class="col-sm-10">
+      <%= form.text_field :address, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Telefone(s)</label>
+    <div class="col-sm-10">
+    <%= form.text_field :phone, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Supervisor de secretaria</label>
+    <div class="col-sm-10">
+      <%= form.text_field :supervisor, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Assistente de secretaria</label>
+    <div class="col-sm-10">
+      <%= form.text_field :assistant, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Comarcas vinculadas</label>
+    <div class="col-sm-10">
+      <%= form.text_area :relantionship, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Distritos judiciários</label>
+    <div class="col-sm-10">
+      <%= form.text_area :judicial_districts, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Juiz titular</label>
+    <div class="col-sm-10">
+      <%= form.text_area :titular_jugde, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Juiz respondendo</label>
+    <div class="col-sm-10">
+      <%= form.text_area :responsiblej, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Promotor titular</label>
+    <div class="col-sm-10">
+      <%= form.text_area :promoter_owner, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Promotor substituto</label>
+    <div class="col-sm-10">
+      <%= form.text_area :promoter_change, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Defensor público</label>
+    <div class="col-sm-10">
+      <%= form.text_area :public_defender, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Turma recursal</label>
+    <div class="col-sm-10">
+      <%= form.text_area :team, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Juízes componentes</label>
+    <div class="col-sm-10">
+      <%= form.text_area :componentsj, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="hr-line-dashed"></div>
+  <div class="form-group">
+    <div class="col-sm-4 col-sm-offset-2" style="margin-left: 90%;">
+
+        <a href="/townships">
+        <button class= "btn btn-danger" type="button">
+          <i class="fa fa-times">
+          </i>
+          </button>
+        </a>
+        <button class= "btn btn-primary" type="submit">
+          <i class="fa fa-check">
+          </i>
+          </button>
+
+    </div>
+  </div>
+<% end %>

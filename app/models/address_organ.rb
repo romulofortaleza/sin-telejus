@@ -1,0 +1,2 @@
+class AddressOrgan < ApplicationRecord
+end

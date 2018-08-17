@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  locate: MyString
+  room: MyString
+  last_update: MyString
+  phones: MyText
+
+two:
+  locate: MyString
+  room: MyString
+  last_update: MyString
+  phones: MyText

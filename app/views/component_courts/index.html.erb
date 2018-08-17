@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Component Courts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Organ</th>
+      <th>Last update</th>
+      <th>Public defender</th>
+      <th>Composition</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @component_courts.each do |component_court| %>
+      <tr>
+        <td><%= component_court.code %></td>
+        <td><%= component_court.organ %></td>
+        <td><%= component_court.last_update %></td>
+        <td><%= component_court.public_defender %></td>
+        <td><%= component_court.composition %></td>
+        <td><%= link_to 'Show', component_court %></td>
+        <td><%= link_to 'Edit', edit_component_court_path(component_court) %></td>
+        <td><%= link_to 'Destroy', component_court, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Component Court', new_component_court_path %>

@@ -1,0 +1,2 @@
+class OrderlyController < ApplicationController
+end
