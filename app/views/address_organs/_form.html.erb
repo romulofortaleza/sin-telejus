@@ -1,4 +1,4 @@
-<%= form_with(model: address_organ, local: true) do |form| %>
+<%= form_with(model: address_organ, local: true, class: 'form-horizontal') do |form| %>
   <% if address_organ.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(address_organ.errors.count, "error") %> prohibited this address_organ from being saved:</h2>
@@ -11,47 +11,75 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :code %>
-    <%= form.number_field :code %>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Código:</label>
+    <div class="col-sm-10">
+       <%= form.number_field :code, class: 'form-control' %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :organ %>
-    <%= form.text_field :organ %>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Orgão:</label>
+    <div class="col-sm-10">
+        <%= form.text_field :organ, class: 'form-control' %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :last_update %>
-    <%= form.date_select :last_update %>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Última Atualização</label>
+    <div class="col-sm-10">
+        <%= form.date_select :last_update, class: 'form-control' %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :type %>
-    <%= form.text_field :type %>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Tipo:</label>
+    <div class="col-sm-10">
+       <%= form.text_field :type, class: 'form-control' %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Nome:</label>
+    <div class="col-sm-10">
+        <%= form.text_field :name, class: 'form-control' %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :address %>
-    <%= form.text_field :address %>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Endereço:</label>
+    <div class="col-sm-10">
+        <%= form.text_field :address, class: 'form-control' %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :phone %>
-    <%= form.text_field :phone %>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">Telefone(s):</label>
+    <div class="col-sm-10">
+       <%= form.text_field :phone, class: 'form-control' %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email %>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">E-mail:</label>
+    <div class="col-sm-10">
+       <%= form.text_field :email, class: 'form-control' %>
+    </div>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+ <div class="hr-line-dashed"></div>
+  <div class="form-group">
+      <div class="col-sm-4 col-sm-offset-2" style="margin-left: 90%;">
+
+        <a href="/address_organs">
+          <button class= "btn btn-danger" type="button">
+            <i class="fa fa-times"></i>
+          </button>
+        </a>
+        <button class= "btn btn-primary" type="submit">
+          <i class="fa fa-check"></i>
+        </button>
+
+    </div>
   </div>
 <% end %>
