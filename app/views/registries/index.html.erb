@@ -18,7 +18,6 @@
                 <th>Comarca</th>
                 <th>Última Atualização</th>
                 <th>Títular</th>
-                <th>E-mail</th>
                 <th class="col-sm-2">Ações</th>
               </tr>
             </thead>
@@ -30,7 +29,6 @@
                   <td><%= registry.county %></td>
                   <td><%= registry.last_update %></td>
                   <td><%= registry.holder %></td>
-                  <td><%= registry.email %></td>
                   <td>
                     <%= link_to fa_icon('eye'), registry, class: 'btn btn-sm btn-success' %>
                     <%= link_to fa_icon('edit'), edit_registry_path(registry), class: 'btn btn-sm btn-warning' %>
