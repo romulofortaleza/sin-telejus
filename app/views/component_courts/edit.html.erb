@@ -1,6 +1,17 @@
-<h1>Editing Component Court</h1>
+<p id="notice"><%= notice %></p>
 
-<%= render 'form', component_court: @component_court %>
+<div class="wrapper wrapper-content animated fadeInRight">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="ibox float-e-margins">
+        <div class="ibox-title">
+          <h5>Editando Componentes do Tribunal Pleno</h5>
+        </div>
+        <div class="ibox-content-scaffold">
+            <%= render 'form', component_court: @component_court %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<%= link_to 'Show', @component_court %> |
-<%= link_to 'Back', component_courts_path %>
