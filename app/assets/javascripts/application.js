@@ -30,14 +30,14 @@
 // require turbolinks
 //= require_tree .
 
-var time = 10; // Tempo de digitação em mili segundos
+var time = 5; // Tempo de digitação em mili segundos
 var atual = 0; // indice atual do bloco de texto
 var qtd; //Definimos uma variavel
 
 $(function(){
     $('.textosTroca .item').hide();
     qtd = $('.textosTroca .item').length;
-    setTimeout('digitaTexto('+atual+')',500);
+    setTimeout('digitaTexto('+atual+')',100);
 });
 
 function digitaTexto(item){
