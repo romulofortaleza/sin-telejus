@@ -1,6 +1,18 @@
-<h1>Editing Address Organ</h1>
 
-<%= render 'form', address_organ: @address_organ %>
+<p id="notice"><%= notice %></p>
 
-<%= link_to 'Show', @address_organ %> |
-<%= link_to 'Back', address_organs_path %>
+<div class="wrapper wrapper-content animated fadeInRight">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="ibox float-e-margins">
+        <div class="ibox-title">
+          <h5>Editando Endereço de Orgãos</h5>
+        </div>
+        <div class="ibox-content-scaffold">
+            <%= render 'form', address_organ: @address_organ %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
